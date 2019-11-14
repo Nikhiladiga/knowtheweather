@@ -78,7 +78,7 @@ class App extends Component{
     e.preventDefault();
     const city = e.target.elements.city.value;
     if(city){
-    const weather_details = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}`);
+    const weather_details = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}`);
     const response = await weather_details.json();
     console.log(response);
 
